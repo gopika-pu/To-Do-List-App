@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{background-color: #ffffff;}
+ 
+.app{
+  padding: 10px;
+  margin: 20px;
   display: flex;
-  flex-direction: column;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.app .mainHeading h1{text-align: center;text-align: left;}
+.app h1,h2{color: white;}
+.app .input{
+  margin-top: 0.8em;
+  width: 20em;
+  height: 2em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 6px;
+  padding: 5px;
+ 
 }
-
-.App-link {
-  color: #61dafb;
+.app .input input{
+  width: 100%;
+  height: 1.6em;
+  border-radius: transparent;
+  outline-color: transparent;
+  border: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app i{
+  cursor: pointer;
+  font-size: large;
+  font-weight: 900;
+  color: grey;
+  margin-right: 5px;
 }
+ 
+.app .todo{
+  margin-top: 40px;
+  width: 20em;
+  height: 2em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px;
+  text-indent: 10px;
+}
+.app .todos .todo .left{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap:10px;
+}
+.app p{
+  margin-left: 3px;
+  font-size: medium;
+  font-weight: 700;
+  font-style: normal;
+  color: grey;
+}
+.todos div h2, .Added-list h2{display: none;}
+.todos div:first-child h2, .Added-list:first-child h2{display: block!important;text-align: center;}
+.todo small.text-gray{position: absolute;top: -20px;right: 5px;color: white;}
+.app .todo, .Added-list, .Deleted-list{position: relative;}
+.Added-list small.text-gray, .Deleted-list .text-gray{position: absolute;color: white;bottom: 45px;right: 5px;}
+.Main-block{background: #4b4a48;padding: 20px;}
+.Todo-app{padding: 20px;background: #755353;height: 100vh;}
+.TopHeading{margin-left: 30px;color: white;}
+.logo-block img{width: 100px;margin-top: 20px;}
+.logo-block{text-align: center;}
+.Deleted-list .text-gray ~ button{position: absolute;right: 10px;bottom: 10px;}
