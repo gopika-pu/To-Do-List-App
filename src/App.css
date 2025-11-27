@@ -15,7 +15,6 @@ body{background-color: #ffffff;}
 .app h1,h2{color: white;}
 .app .input{
   margin-top: 0.8em;
-  width: 20em;
   height: 2em;
   background-color: white;
   display: flex;
